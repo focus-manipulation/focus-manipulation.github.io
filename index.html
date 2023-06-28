@@ -1,0 +1,285 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS</title>
+    <!-- Bulma CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome icons  -->
+    <script src="https://kit.fontawesome.com/b165665cab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container p-3 is-primary">
+        <!-- Title section -->
+        <div class="block is-center has-text-centered">
+            <h1 class="title is-1 is-spaced">FOCUS: Object-Centric World Models for Robotics Manipulation</h1>
+            <div class="columns is-mobile is-centered is-multiline"> Anonymous Authors
+            </div>
+        </div>
+
+        <div>
+            <p style="text-align:center;"><img src="./resources/images/arch.svg" alt="My Happy SVG"
+                    style="width:70%;" /> </p>
+        </div>
+
+        <!-- Abstract -->
+        <div class="block box" class="has-text-centered">
+            <div class="has-text-centered">
+                <h2 class="title is-3"> Abstract </h2>
+                <p class="is-size-5">
+                    Understanding the world in terms of objects and the possible interplays with them is an important
+                    cognition ability, especially in robotics manipulation, where many tasks require robot-object
+                    interactions. However, learning such a structured world model, which specifically captures entities
+                    and relationships, remains a challenging and underexplored problem. To address this, we propose
+                    FOCUS, a model-based agent that learns an object-centric world model. Thanks to a novel
+                    exploration bonus that stems from the object-centric representation, FOCUS can be deployed on
+                    robotics manipulation tasks to explore object interactions more easily. Evaluating our approach on
+                    manipulation tasks across different settings, we show that object-centric world models allow the
+                    agent to solve tasks more efficiently and enable consistent exploration of robot-object
+                    interactions. Using a Franka Emika robot arm, we also showcase how FOCUS could be adopted in
+                    real-world settings.
+                </p>
+            </div>
+        </div>
+
+        <div class="block box is-size-4">
+            <h2 class="title is-3"> Exploration Behaviour </h2>
+            <div class="content">
+                Exploration behaviour of FOCUS at different training snapshots.
+
+            </div>
+
+            <div class="block box has-text-centered">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable" style="text-align:center">
+                    <div class="column is-one-quarter-mobile">
+                        <b>Snapshot: </b>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <b>100k</b>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <b>500k</b>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <b>1M</b>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <b>2M</b>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/cube/100000.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/cube/500000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/cube/1000000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/cube/2000000.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/stack/100000.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/stack/500000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/stack/1000000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/stack/2000000.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/faucet/100000.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/faucet/500000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/faucet/1000000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/faucet/2000000.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/banana/100000.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/banana/500000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/banana/1000000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/banana/2000000.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/MC/100000.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/MC/500000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/MC/1000000.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/MC/2000000.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- World Model Reconstructions  -->
+        <div class="block box is-size-4">
+            <h2 class="title is-3"> World Model Reconstructions </h2>
+            <div class="content">
+                Reconstructions of world models for the different tasks (random actions).
+
+            </div>
+            <div class="block box">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile"
+                        style="display:flex; flex-direction:column; text-align:right">
+                        <div style="flex:1">
+                            <b>GT </b>
+                        </div>
+                        <div style="flex:1">
+                            <b>FOCUS</b>
+                        </div>
+                        <div style="flex:1">
+                            <b>DreamerV2</b>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/cube/out.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/stack/out.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/faucet/out.gif" alt="out" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/banana/out.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/MC/out.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/real/realWM_4.gif" alt="out" />
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/WM/real/realWM_5.gif" alt="out" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+    </div>
+</body>
+
+</html>
