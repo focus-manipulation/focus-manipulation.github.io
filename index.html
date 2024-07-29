@@ -25,17 +25,17 @@
         </div>
 
         <div>
-            <p style="text-align:center;"><img src="./resources/images/arch.svg" alt="My Happy SVG"
+            <p style="text-align:center;"><img src="./resources/images/arch.png" alt="Architecture OCWM"
                     style="width:70%;" /> </p>
         </div>
 
         <!-- Icons-->
-        <div class="block is-center has-text-centered">
+        <!-- <div class="block is-center has-text-centered">
             <a class="button is-rounded" href="https://arxiv.org/pdf/2307.02427.pdf">
                 <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
                 <span>Article</span>
             </a>
-        </div>
+        </div> -->
 
         <!-- Abstract -->
         <div class="block box" class="has-text-centered">
@@ -44,20 +44,7 @@
 
 
                 <p class="is-size-5">
-                    Understanding the world in terms of objects and the possible interplays with them is an
-                    important
-                    cognition ability, especially in robotics manipulation, where many tasks require robot-object
-                    interactions. However, learning such a structured world model, which specifically captures
-                    entities
-                    and relationships, remains a challenging and underexplored problem. To address this, we propose
-                    FOCUS, a model-based agent that learns an object-centric world model. Thanks to a novel
-                    exploration bonus that stems from the object-centric representation, FOCUS can be deployed on
-                    robotics manipulation tasks to explore object interactions more easily. Evaluating our approach
-                    on
-                    manipulation tasks across different settings, we show that object-centric world models allow the
-                    agent to solve tasks more efficiently and enable consistent exploration of robot-object
-                    interactions. Using a Franka Emika robot arm, we also showcase how FOCUS could be adopted in
-                    real-world settings.
+                    Understanding the world in terms of objects and the possible interactions with them is an important cognitive ability. However, current world models adopted in RL typically lack this structure and represent the world state in a global latent vector. To address this, we propose \OurMethod{}, a model-based agent that learns an object-centric world model. This novel representation also enables the design of an object-centric exploration mechanism, which encourages the agent to interact with objects and discover useful interactions. We benchmark \OurMethod{} in several robotic manipulation settings, where we found that our method can be used to improve manipulation skills. The object-centric world model leads to more accurate predictions of the objects in the scene and it enables more efficient learning. The object-centric exploration strategy fosters interactions with the objects in the environment, such as reaching, moving, and rotating them, and it allows fast adaptation of the agent to sparse reward reinforcement learning tasks. 
                 </p>
             </div>
         </div>
@@ -313,7 +300,7 @@
             </div>
         </div>
 
-        <!-- Exp Experiments details  -->
+        <!-- Exp Experiments details 
         <div class="block box is-size-4">
             <h2 class="title is-3"> Dense reward experiments </h2>
             <div class="content">
@@ -331,7 +318,7 @@
                 </div>
             </div>
         </div>
-        <br>
+        <br> -->
 
     </div>
     <footer class="footer pt-5 pb-5">
